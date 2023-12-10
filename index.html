@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Instagram Clone</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+
+      <div class="container">
+
+        <div class="profile">
+
+          <div class="profile-image">
+
+            <img src="img/profile.jpg" alt="" width="60%" height="60%">
+
+          </div>
+
+          <div class="profile-user-settings">
+
+            <h1 class="profile-user-name">programmer_girl__</h1>
+
+            <button class="btn profile-edit-btn">Edit Profile</button>
+
+            <button class="btn profile-settings-btn" aria-label="profile settings"><i class="fas fa-cog" aria-hidden="true"></i></button>
+
+          </div>
+
+          <div class="profile-stats">
+
+            <ul>
+              <li><span class="profile-stat-count">15</span> posts</li>
+              <li><span class="profile-stat-count">176</span> followers</li>
+              <li><span class="profile-stat-count">232</span> following</li>
+            </ul>
+
+          </div>
+
+          <div class="profile-bio">
+
+            <p><span class="profile-real-name">Albanian</span> Always ready to learn new things 📷✈️🏕️</p>
+
+          </div>
+
+        </div>
+        <!-- End of profile section -->
+
+      </div>
+      <!-- End of container -->
+
+    </header>
+
+    <main>
+
+      <div class="container">
+
+        <div class="gallery">
+
+          <div class="gallery-item" tabindex="0">
+
+            <img src="https://images.ctfassets.net/rvt0uslu5yqp/MHmmM5FsvvQbHtuP1LSBU/788e0dae64e3a01f099d300dc5692fb3/woman_presenting_with_mentimeter.jpeg" class="gallery-image" alt="">
+
+            <div class="gallery-item-info">
+
+              <ul>
+                <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 56</li>
+                <li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fas fa-comment" aria-hidden="true"></i> 2</li>
+              </ul>
+
+            </div>
+
+          </div>
+
+          <div class="gallery-item" tabindex="0">
+
+            <img src="https://images.unsplash.com/photo-1497445462247-4330a224fdb1?w=500&h=500&fit=crop" class="gallery-image" alt="">
+
+            <div class="gallery-item-info">
+
+              <ul>
+                <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 89</li>
+                <li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fas fa-comment" aria-hidden="true"></i> 5</li>
+              </ul>
+
+            </div>
+
+          </div>
+
+          <div class="gallery-item" tabindex="0">
+
+            <img src="https://images.unsplash.com/photo-1426604966848-d7adac402bff?w=500&h=500&fit=crop" class="gallery-image" alt="">
+
+            <div class="gallery-item-type">
+
+              <span class="visually-hidden">Gallery</span><i class="fas fa-clone" aria-hidden="true"></i>
+
+            </div>
+
+            <div class="gallery-item-info">
+
+              <ul>
+                <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 42</li>
+                <li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fas fa-comment" aria-hidden="true"></i> 1</li>
+              </ul>
+
+            </div>
+
+          </div>
+
+          <div class="gallery-item" tabindex="0">
+
+            <img src="https://images.unsplash.com/photo-1502630859934-b3b41d18206c?w=500&h=500&fit=crop" class="gallery-image" alt="">
+
+            <div class="gallery-item-type">
+
+              <span class="visually-hidden">Video</span><i class="fas fa-video" aria-hidden="true"></i>
+
+            </div>
+
+            <div class="gallery-item-info">
+
+              <ul>
+                <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 38</li>
+                <li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fas fa-comment" aria-hidden="true"></i> 0</li>
+              </ul>
+
+            </div>
+
+          </div>
+
+          <div class="gallery-item" tabindex="0">
+
+            <img src="data:image/jpeg;base64,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" class="gallery-image" alt="">
+
+            <div class="gallery-item-type">
+
+              <span class="visually-hidden">Gallery</span><i class="fas fa-clone" aria-hidden="true"></i>
+
+            </div>
+
+            <div class="gallery-item-info">
+
+              <ul>
+                <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 47</li>
+                <li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fas fa-comment" aria-hidden="true"></i> 1</li>
+              </ul>
+
+            </div>
+
+          </div>
+
+          <div class="gallery-item" tabindex="0">
+
+            <img src="https://i.pinimg.com/236x/aa/81/9b/aa819bcf8a99fdf506e453194afeb00b.jpg" class="gallery-image" alt="">
+
+            <div class="gallery-item-info">
+
+              <ul>
+                <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 94</li>
+                <li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fas fa-comment" aria-hidden="true"></i> 3</li>
+              </ul>
+
+            </div>
+
+          </div>
+
+          <div class="gallery-item" tabindex="0">
+
+            <img src="https://images.unsplash.com/photo-1504214208698-ea1916a2195a?w=500&h=500&fit=crop" class="gallery-image" alt="">
+
+            <div class="gallery-item-type">
+
+              <span class="visually-hidden">Gallery</span><i class="fas fa-clone" aria-hidden="true"></i>
+
+            </div>
+
+            <div class="gallery-item-info">
+
+              <ul>
+                <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 52</li>
+                <li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fas fa-comment" aria-hidden="true"></i> 4</li>
+              </ul>
+
+            </div>
+
+          </div>
+
+          <div class="gallery-item" tabindex="0">
+
+            <img src="https://images.unsplash.com/photo-1515814472071-4d632dbc5d4a?w=500&h=500&fit=crop" class="gallery-image" alt="">
+
+            <div class="gallery-item-info">
+
+              <ul>
+                <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 66</li>
+                <li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fas fa-comment" aria-hidden="true"></i> 2</li>
+              </ul>
+
+            </div>
+
+          </div>
+
+          <div class="gallery-item" tabindex="0">
+
+            <img src="https://images.unsplash.com/photo-1511407397940-d57f68e81203?w=500&h=500&fit=crop" class="gallery-image" alt="">
+
+            <div class="gallery-item-type">
+
+              <span class="visually-hidden">Gallery</span><i class="fas fa-clone" aria-hidden="true"></i>
+
+            </div>
+
+            <div class="gallery-item-info">
+
+              <ul>
+                <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 45</li>
+                <li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fas fa-comment" aria-hidden="true"></i> 0</li>
+              </ul>
+
+            </div>
+
+          </div>
+
+          <div class="gallery-item" tabindex="0">
+
+            <img src="https://images.unsplash.com/photo-1518481612222-68bbe828ecd1?w=500&h=500&fit=crop" class="gallery-image" alt="">
+
+            <div class="gallery-item-info">
+
+              <ul>
+                <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 34</li>
+                <li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fas fa-comment" aria-hidden="true"></i> 1</li>
+              </ul>
+
+            </div>
+
+          </div>
+
+          <div class="gallery-item" tabindex="0">
+
+            <img src="img/beach.jpg" class="gallery-image" alt="" height="70%">
+
+            <div class="gallery-item-info">
+
+              <ul>
+                <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 41</li>
+                <li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fas fa-comment" aria-hidden="true"></i> 0</li>
+              </ul>
+
+            </div>
+
+          </div>
+
+          <div class="gallery-item" tabindex="0">
+
+            <img src="https://c4.wallpaperflare.com/wallpaper/53/696/45/girl-with-helmet-want-to-riding-horse-wallpaper-preview.jpg" class="gallery-image" alt="">
+
+            <div class="gallery-item-type">
+
+              <span class="visually-hidden">Video</span><i class="fas fa-video" aria-hidden="true"></i>
+
+            </div>
+
+            <div class="gallery-item-info">
+
+              <ul>
+                <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 30</li>
+                <li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fas fa-comment" aria-hidden="true"></i> 2</li>
+              </ul>
+
+            </div>
+
+          </div>
+
+        </div>
+        <!-- End of gallery -->
+
+        <div class="loader"></div>
+
+      </div>
+      <!-- End of container -->
+
+    </main>
+  </body>
+</html>
